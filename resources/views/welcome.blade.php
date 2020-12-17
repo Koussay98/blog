@@ -14,7 +14,7 @@
 @endpush
 
 @section('content')
- hello bitches 
+ 
     <div class="main-slider">
         <div class="swiper-container position-static" data-slide-effect="slide" data-autoheight="false"
              data-swiper-speed="500" data-swiper-autoplay="10000" data-swiper-margin="0" data-swiper-slides-per-view="4"
