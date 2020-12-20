@@ -9,6 +9,9 @@
         .favorite_posts{
             color: blue;
         }
+        .slider {
+    
+        }
     </style>
 @endpush
 
