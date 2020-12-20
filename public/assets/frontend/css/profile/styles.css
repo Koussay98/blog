@@ -139,7 +139,7 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 4. SLIDER
 --------------------------------- */
 
-.slider{ height: 400px; width: 100%; background-image: url(../../images/category-1.jpg); background-size: cover; }  
+.slider{ height: 400px; width: 100%; background-image: linear-gradient(to bottom, #171c24, #3c3156, #87386f, #d23c62, #ff652f); background-size: cover; }  
  
 .slider .title{ color: #fff; text-shadow: 2px 2px 10px rgba(0,0,0,.3); }
  

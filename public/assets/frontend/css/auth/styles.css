@@ -138,7 +138,7 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 4. SLIDER
 --------------------------------- */
 
-.slider{ height: 300px; width: 100%; background-image: url(../../images/slider-1.jpg); background-size: cover; }  
+.slider{ height: 300px; width: 100%; background:#171c24; background-size: cover; }  
  
 .slider .title{ color: #fff; text-shadow: 2px 2px 10px rgba(0,0,0,.3); }
 
@@ -162,7 +162,7 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 6. FOOTER
 --------------------------------- */
 
-footer{ padding: 70px 0 30px; background: #fff; }
+footer{ padding: 70px 0 30px; background:#171c24; color: white; }
 
 footer .footer-section{ margin-bottom: 40px; }
 
@@ -171,7 +171,7 @@ footer .footer-section .title{ margin-bottom: 20px; }
 footer .footer-section ul > li{ margin-right: 10px; margin-top: 10px; }
 
 
-footer .copyright{ margin: 10px 0; }
+footer .copyright{ margin: 10px 0;  color:white}
 
 
 footer .icons > li > a{ height: 40px; width: 40px; border-radius: 40px; line-height: 40px; text-align: center; 
@@ -187,9 +187,389 @@ footer .input-area .email-input{ position: absolute; top: 0; bottom: 0; left: 0;
 
 footer .input-area .email-input:focus{ box-shadow: 0px 0px 1px #aaa; }
 
-footer .input-area .submit-btn{ position: absolute; top: 0; bottom: 0; right: 0; width: 50px; background: none; 
-	border: 0; outline: 0; padding: 7px; margin-right: 10px; opacity: .8; cursor: pointer; }
+footer .input-area .submit-btn{ position: relative; top: 0; bottom: 0; right: 0; width: 50px; background: none; 
+	border: 0; outline: 0; padding: 7px; margin-right: 10px; opacity: .8; cursor: pointer; color: #000; }
 
 footer .input-area .submit-btn img{ width: 100%; height: 100%; }
 
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+  background: #171c24;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 100px;
+}
+nav .logo{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+nav .nav-items{
+  display: flex;
+  flex: 1;
+  padding: 0 0 0 40px;
+}
+nav .nav-items li{
+  list-style: none;
+  padding: 0 15px;
+}
+nav .nav-items li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+nav .nav-items li a:hover{
+  color: #ff3d00;
+}
+nav form{
+  display: flex;
+  height: 40px;
+  padding: 2px;
+  background: #1e232b;
+  min-width: 18%!important;
+  border-radius: 2px;
+  border: 1px solid rgba(155,155,155,0.2);
+}
+nav form .search-data{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  color: #fff;
+  font-size: 17px;
+  border: none;
+  font-weight: 500;
+  background: none;
+}
+nav form button{
+  padding: 0 15px;
+  color: #fff;
+  font-size: 17px;
+  background: #ff3d00;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+nav form button:hover{
+  background: #e63600;
+}
+nav .menu-icon,
+nav .cancel-icon,
+nav .search-icon{
+  width: 40px;
+  text-align: center;
+  margin: 0 50px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+nav .menu-icon span,
+nav .cancel-icon,
+nav .search-icon{
+  display: none;
+}
+@media (max-width: 1245px) {
+  nav{
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1140px){
+  nav{
+    padding: 0px;
+  }
+  nav .logo{
+    flex: 2;
+    text-align: center;
+  }
+  nav .nav-items{
+    position: fixed;
+    z-index: 99;
+    top: 70px;
+    width: 100%;
+    left: -100%;
+    height: 100%;
+    padding: 10px 50px 0 50px;
+    text-align: center;
+    background: #14181f;
+    display: inline-block;
+    transition: left 0.3s ease;
+  }
+  nav .nav-items.active{
+    left: 0px;
+  }
+  nav .nav-items li{
+    line-height: 40px;
+    margin: 30px 0;
+  }
+  nav .nav-items li a{
+    font-size: 20px;
+  }
+  nav form{
+    position: absolute;
+    top: 80px;
+    right: 50px;
+    opacity: 0;
+    pointer-events: none;
+    transition: top 0.3s ease, opacity 0.1s ease;
+  }
+  nav form.active{
+    top: 95px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  nav form:before{
+    position: absolute;
+    content: "";
+    top: -13px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    z-index: -1;
+    border: 10px solid transparent;
+    border-bottom-color: #1e232b;
+    margin: -20px 0 0;
+  }
+  nav form:after{
+    position: absolute;
+    content: '';
+    height: 60px;
+    padding: 2px;
+    background:  b;
+    border-radius: 2px;
+    min-width: calc(100% + 20px);
+    z-index: -2;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  nav .menu-icon{
+    display: block;
+  }
+  nav .search-icon,
+  nav .menu-icon span{
+    display: block;
+  }
+  nav .menu-icon span.hide,
+  nav .search-icon.hide{
+    display: none;
+  }
+  nav .cancel-icon.show{
+    display: block;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.content header{
+  font-size: 30px;
+  font-weight: 700;
+}
+.content .text{
+  font-size: 30px;
+  font-weight: 700;
+}
+.space{
+  margin: 10px 0;
+}
+nav .logo.space{
+  color: red;
+  padding: 0 5px 0 0;
+}
+@media (max-width: 980px){
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon{
+    margin: 0 20px;
+  }
+  nav form{
+    right: 30px;
+  }
+}
+@media (max-width: 350px){
+  nav .menu-icon,
+  nav .cancel-icon,
+  nav .search-icon{
+    margin: 0 10px;
+    font-size: 16px;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content header{
+  font-size: 30px;
+  font-weight: 700;
+}
+.content .text{
+  font-size: 30px;
+  font-weight: 700;
+}
+.content .space{
+  margin: 10px 0;
+}
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+ 
+  .login-wrapper {
+	background: url('https://i.postimg.cc/Qt6qTWJd/bg.jpg') no-repeat center;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .form {
+	position: relative;
+	width: 100%;
+	max-width: 380px;
+	padding: 80px 40px 40px;
+	background: rgba(0,0,0,0.7);
+	border-radius: 10px;
+	color: #fff;
+	box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  }
+  .form::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255, 0.08);
+	transform: skewX(-26deg);
+	transform-origin: bottom left;
+	border-radius: 10px;
+	pointer-events: none;
+  }
+  .form img {
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+	width: 100px;
+	background: rgba(255,255,255, 0.8);
+	border-radius: 50%;
+  }
+  .form h2 {
+	text-align: center;
+	letter-spacing: 1px;
+	margin-bottom: 2rem;
+	color: #ff652f;
+  }
+  .form .input-group {
+	position: relative;
+  }
+  .form .input-group input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background-color: transparent;
+	color: inherit;
+  }
+  .form .input-group label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 1rem;
+	pointer-events: none;
+	transition: .3s ease-out;
+  }
+  .form .input-group input:focus + label,
+  .form .input-group input:valid + label {
+	transform: translateY(-18px);
+	color: #ff652f;
+	font-size: .8rem;
+  }
+  .submit-btn {
+	display: block;
+	margin-left: auto;
+	border: none;
+	outline: none;
+	background: #ff652f;
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .forgot-pw {
+	color: inherit;
+  }
+  
+  #forgot-pw {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 0;
+	z-index: 1;
+	background: #fff;
+	opacity: 0;
+	transition: 0.6s;
+  }
+  #forgot-pw:target {
+	height: 100%;
+	opacity: 1;
+  }
+  .close {
+	position: absolute;
+	right: 1.5rem;
+	top: 0.5rem;
+	font-size: 2rem;
+	font-weight: 900;
+	text-decoration: none;
+	color: inherit;
+  }
+  #email {
+	width: 150%;
+	
+  }
+  #password{
+
+
+	width: 150%;
+  }
+#password-confirm,#name,#username{
+
+
+	width: 150%;
+
+}

@@ -23,7 +23,7 @@
             <div class="row">
                 @forelse($posts as $post)
                     <div class="col-lg-4 col-md-6">
-                        <div class="card h-100">
+                        <div class="card   h-100">
                             <div class="single-post post-style-1">
 
                                 <div class="blog-image">

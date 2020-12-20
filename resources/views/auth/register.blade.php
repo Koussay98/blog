@@ -9,18 +9,13 @@
 @endpush
 
 @section('content')
-    <div class="slider display-table center-text">
-        <h1 class="title display-table-cell"><b>REGISTER</b></h1>
-    </div><!-- slider -->
-
-    <section class="blog-area section">
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-2 col-md-0"></div>
-                <div class="col-lg-8 col-md-12">
-                    <div class="post-wrapper">
-                        <form method="POST" action="{{ route('register') }}">
+  
+   
+<div class="login-wrapper">
+                        <form method="POST" action="{{ route('register') }}" class="form">
+                        
+                            <img src="https://i.postimg.cc/SsVgfPkq/avatar.png" alt="">
+      <h2>Register</h2>
                             @csrf
 
                             <div class="form-group row">
@@ -89,19 +84,12 @@
 
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
-                                    <button type="submit" class="btn btn-primary">
-                                        {{ __('Register') }}
-                                    </button>
+                                <input type="submit" value="REGISTER" class="submit-btn">
                                 </div>
                             </div>
                         </form>
                     </div><!-- post-wrapper -->
-                </div><!-- col-sm-8 col-sm-offset-2 -->
-            </div><!-- row -->
-
-        </div><!-- container -->
-    </section><!-- section -->
-
+                
 @endsection
 
 @push('js')
