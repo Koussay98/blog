@@ -171,12 +171,12 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 .blog-area{ text-align: center; background: #EDF3F3; }
 
 .blog-area .single-post{ height: 100%; position: relative; padding-bottom: 45px;
-	overflow: hidden; box-shadow: 0px 0px 5px rgba(0,0,0,.1); border: 1px solid #ddd; background:#171c24; }
+	overflow: hidden; box-shadow: 0px 0px 5px rgba(0,0,0,.1); border: 1px solid #ddd; background: #fff; }
 
-.blog-area .single-post .title{ padding: 20px 30px 30px;  color: #e63600;}
+.blog-area .single-post .title{ padding: 20px 30px 30px; }
 
 .single-post .avatar{ margin: 0 auto; margin-top: -40px; width: 70px; height: 70px; overflow: hidden; z-index: 10;
-	border-radius: 100px; position: relative; border: 4px solid#f1ebe9; box-shadow: 0px 0px 10px rgba(0,0,0,.2); }
+	border-radius: 100px; position: relative; border: 7px solid #fff; box-shadow: 0px 0px 10px rgba(0,0,0,.2); }
 
 .single-post .post-footer{ position: absolute; bottom: 0; left: 0; right: 0; text-align: center; }
 
@@ -189,7 +189,6 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 .single-post .post-footer > li > a{ line-height: 45px; width: 100%; }
 
 .single-post .post-footer i{ display: inline-block; margin-right: 10px; opacity: .6; font-size: 1.1em; }
-
 
 /* ---------------------------------
 6. NORMAL BLOG
@@ -237,7 +236,7 @@ header .src-area .src-btn{ position: absolute; top: 0; bottom: 0; left: 0; width
 
 .display-table .display-table-cell.title{ padding: 30px; }
 
-.load-more-btn{ padding: 15px 40px; margin: 10px 0 30px; transition: all .3s; box-shadow: 0px 0px 2px rgba(0,0,0,.4);
+.load-more-btn{ padding: 15px 40px; margin: 10px 0 30px; color:white; transition: all .3s; box-shadow: 0px 0px 2px rgba(0,0,0,.4);
 	background: #e63600; }
 
 .load-more-btn:hover{ transform: translateY(-2px); box-shadow: 5px 10px 20px rgba(0,0,0,.3); } 

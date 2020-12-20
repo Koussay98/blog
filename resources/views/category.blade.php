@@ -16,6 +16,9 @@
         .favorite_posts{
             color: blue;
         }
+        .slider .title{ 
+         color:   #171c24;
+        }
     </style>
 @endpush
 
