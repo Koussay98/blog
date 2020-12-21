@@ -22,7 +22,7 @@
                     </div>
                     <div class="body">
                         <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                            <table class="table table-bordered  dataTable js-exportable">
                                 <thead>
                                 <tr>
                                     <th class="text-center">Comments Info</th>
@@ -30,13 +30,6 @@
                                     <th class="text-center">Action</th>
                                 </tr>
                                 </thead>
-                                <tfoot>
-                                <tr>
-                                    <th class="text-center">Comments Info</th>
-                                    <th class="text-center">Post Info</th>
-                                    <th class="text-center">Action</th>
-                                </tr>
-                                </tfoot>
                                 <tbody>
                                     @foreach($comments as $key=>$comment)
                                         <tr>

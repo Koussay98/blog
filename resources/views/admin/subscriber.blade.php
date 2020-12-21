@@ -22,7 +22,7 @@
                     </div>
                     <div class="body">
                         <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                            <table class="table table-bordered   dataTable js-exportable">
                                 <thead>
                                 <tr>
                                     <th>ID</th>
@@ -32,15 +32,7 @@
                                     <th>Action</th>
                                 </tr>
                                 </thead>
-                                <tfoot>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Email</th>
-                                    <th>Created At</th>
-                                    <th>Updated At</th>
-                                    <th>Action</th>
-                                </tr>
-                                </tfoot>
+                                
                                 <tbody>
                                     @foreach($subscribers as $key=>$subscriber)
                                         <tr>

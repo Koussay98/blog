@@ -71,7 +71,7 @@
                     </div>
                     <div class="body">
                         <div class="table-responsive">
-                            <table class="table table-hover dashboard-task-infos">
+                            <table class="table table-bordered dashboard-task-infos">
                                 <thead>
                                 <tr>
                                     <th>Rank List</th>
