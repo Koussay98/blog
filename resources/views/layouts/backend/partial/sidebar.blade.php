@@ -163,8 +163,6 @@
             @endif
         </ul>
     </div>
-    <div class="legal">
-        
-    </div>
+   
     
 </aside>

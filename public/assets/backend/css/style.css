@@ -4550,8 +4550,8 @@ section.content {
 /* Tables ====================================== */
 .table tbody tr td, .table tbody tr th {
   padding: 10px;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee; }
+  border-top: none;
+  border-bottom: none; }
 
 .table tbody tr.primary td, .table tbody tr.primary th {
   background-color: #1f91f3;
@@ -4575,17 +4575,19 @@ section.content {
 
 .table thead tr th {
   padding: 10px;
-  border-bottom: 1px solid #eee; }
+  border-bottom: 0.1px thin  rgb(19, 15, 15); }
 
 .table-bordered {
-  border-top: 1px solid #eee; }
+  border-top: none; }
   .table-bordered tbody tr td, .table-bordered tbody tr th {
     padding: 10px;
-    border: 1px solid #eee; }
+    
+    border-top: 1px solid #565b61;}
   .table-bordered thead tr th {
+   
     padding: 10px;
-    border: 1px solid #eee; }
-
+    border: none; }
+   
 /* Panel ======================================= */
 .panel-group .panel-col-red {
   border: 1px solid #F44336; }
@@ -7526,12 +7528,13 @@ background: #222933; }
     padding: 13px 15px 12px 15px;
     white-space: nowrap;
     position: relative;
-    background: url('https://i.postimg.cc/Qt6qTWJd/bg.jpg') no-repeat center;
+    background:#0d1015 ;
     height: 135px; }
     .sidebar .user-info .image {
       margin-right: 12px;
       display: inline-block; }
       .sidebar .user-info .image img {
+       margin-left: 100px;
         -webkit-border-radius: 50%;
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
@@ -7544,6 +7547,8 @@ background: #222933; }
       position: relative;
       top: 18px; }
       .sidebar .user-info .info-container .name {
+        margin-left: 38%;
+
         white-space: nowrap;
         -ms-text-overflow: ellipsis;
         -o-text-overflow: ellipsis;
@@ -7552,8 +7557,9 @@ background: #222933; }
         font-size: 18px;
         font-weight: bold;
         max-width: 200px;
-        color: #03060D; }
+        color: white; }
       .sidebar .user-info .info-container .email {
+        margin-left: 20%;
         white-space: nowrap;
         -ms-text-overflow: ellipsis;
         -o-text-overflow: ellipsis;
@@ -7562,7 +7568,7 @@ background: #222933; }
         font-size: 18px;
         font-weight: bold;
         max-width: 200px;
-        color: #03060D; }
+        color: white; }
       .sidebar .user-info .info-container .user-helper-dropdown {
         position: absolute;
         right: -3px;
