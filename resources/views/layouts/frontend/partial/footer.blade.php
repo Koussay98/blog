@@ -7,9 +7,9 @@
                 <div class="footer-section">
 
                     {{--<a class="logo" href="#"><img src="images/logo.png" alt="Logo Image"></a>--}}
-                    <p class="copyright">{{ env('APP_NAME') }} @ {{ date('Y') }}. All rights reserved.</p>
-                    <p class="copyright"><strong> Developed &amp; <i class="far fa-heart"></i> by </strong>
-                        <a href="https://www.youtube.com/channel/UCwbVAlvrsD2Tpx93bleNbOA" target="_blank">Programming kit</a></p>
+                    <p class="copyright"></p>
+                    <p class="copyright"><strong> Developed   by </strong>
+                        <a href="https://www.youtube.com/channel/UCwbVAlvrsD2Tpx93bleNbOA" target="_blank">Jaziri Mongi & Lahwel Koussay</a></p>
                     <ul class="icons">
                       
                     </ul>
